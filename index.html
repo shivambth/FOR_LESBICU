@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our 4 Months Story ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for romantic typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Background Particles / Stars / Hearts Container -->
+    <div id="ambient-particles" aria-hidden="true"></div>
+
+    <!-- Top Navigation / Progress Bar & Music Toggle -->
+    <header class="app-header">
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="header-controls">
+            <span id="story-chapter-title" class="chapter-badge">Chapter 1</span>
+            <button id="music-toggle-btn" class="icon-btn" title="Toggle Ambient Sound / Music">🎵 <span id="music-status">Off</span></button>
+            <button id="restart-btn" class="icon-btn" title="Restart Story">↺</button>
+        </div>
+    </header>
+
+    <!-- Hidden audio element for optional background music (replace source or leave toggleable) -->
+    <audio id="bg-audio" loop>
+        <!-- Place your audio file here if desired: <source src="assets/music.mp3" type="audio/mp3"> -->
+    </audio>
+
+    <!-- Main Dynamic Container for 150+ Interactive Moments -->
+    <main id="app-main-container">
+        <!-- Dynamic content is rendered here via script.js -->
+    </main>
+
+    <!-- Global Modal for Photos, Envelopes & Surprises -->
+    <div id="global-modal" class="modal-backdrop hidden">
+        <div class="modal-card glass-panel">
+            <button id="modal-close-btn" class="modal-close">&times;</button>
+            <div id="modal-content-area"></div>
+        </div>
+    </div>
+
+    <!-- Confetti / Particle Canvas -->
+    <canvas id="celebration-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
